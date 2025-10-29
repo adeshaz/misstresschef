@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 25px rgba(0, 128, 0, 0.3); 
+}
+.card-title {
+  min-height: 3rem; /* ensures consistent height across all titles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 1023px) and (min-width: 700px) {
+  .col-md-custom {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}

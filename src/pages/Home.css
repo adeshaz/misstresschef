@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaf-img-top {
+  height: 40px;
+}
+
+/* Common styles for all product images */
+.cream-img,
+.lotion-img,
+.toner-img,
+.coconut-img,
+.herbal-img,
+.baby-img,
+.turmeric-img,
+.rosewater-img,
+.charcoal-img,
+.avocado-img,
+.lemon-img,
+.vitamin-img,
+.papaya-img,
+.honey-img,
+.lavender-img,
+.neem-img,
+.aloehair-img,
+.cucumber-img,
+.herbalwhite-img,
+.teatree-img,
+.carrot-img,
+.mint-img,
+.footcream-img,
+.argan-img,
+.neemaloe-img,
+.roseclay-img,
+.cocoa-img,
+.aloehand-img,
+.lemonglow-img,
+.hairgrowth-img {
+  padding: 5px;
+  border-radius: 12px;
+  height: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for all */
+.cream-img:hover,
+.lotion-img:hover,
+.toner-img:hover,
+.coconut-img:hover,
+.herbal-img:hover,
+.baby-img:hover,
+.turmeric-img:hover,
+.rosewater-img:hover,
+.charcoal-img:hover,
+.avocado-img:hover,
+.lemon-img:hover,
+.vitamin-img:hover,
+.papaya-img:hover,
+.honey-img:hover,
+.lavender-img:hover,
+.neem-img:hover,
+.aloehair-img:hover,
+.cucumber-img:hover,
+.herbalwhite-img:hover,
+.teatree-img:hover,
+.carrot-img:hover,
+.mint-img:hover,
+.footcream-img:hover,
+.argan-img:hover,
+.neemaloe-img:hover,
+.roseclay-img:hover,
+.cocoa-img:hover,
+.aloehand-img:hover,
+.lemonglow-img:hover,
+.hairgrowth-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.4);
+}
+
+/* Optional: unique filters for variation (not required) */
+.lotion-img,
+.herbal-img,
+.honey-img,
+.mint-img,
+.lavender-img {
+  filter: brightness(0.95);
+}
+
+.charcoal-img,
+.teatree-img {
+  filter: contrast(1.05);
+}
+
+.papaya-img,
+.cocoa-img {
+  filter: saturate(1.1);
+}
