@@ -1,36 +1,6 @@
 import React, { useState } from "react";
 import ProductCard from "../components/ProductCard";
-import imgpart3 from "../components/multimedia/vecteezy_cosmetic-cream-on-a-wooden-table-with-aloe-vera-and-blurred_43372788.jpg";
-import imgpart4 from '../components/multimedia/vecteezy_bottle-with-pump-on-pink-background-for-personal-care-concept_65824415.jpg';
-import imgpart5 from '../components/multimedia/vecteezy_aromatic-spray-bottle-with-mint-leaves-and-flowers-flat-lay_69632698.jpg'; 
-import imgpart6 from '../components/multimedia/vecteezy_coconut-oil-jar-with-fresh-coconut-and-tropical-flowers_69738785.jpeg';
-import imgpart7 from '../components/multimedia/vecteezy_bottle-of-green-liquid-surrounded-by-daisies_46406146.jpeg'
-import imgpart8 from '../components/multimedia/vecteezy_decorative-jar-with-lid-containing-creamy-cosmetic-product_65288181.jpeg'
-import imgpart40 from "../components/multimedia/turmeric-powder.jpg"
-import imgpart9 from "../components/multimedia/3d-rendering-personal-care-products-fondant-pink.jpg"
-import imgpart10 from "../components/multimedia/adult-woman-applying-skin-care-treatment.jpg"
-import imgpart11 from "../components/multimedia/eco-avocado-cream-spa-treatment-concept.jpg"
-import imgpart12 from "../components/multimedia/top-view-lemons-basket-with-white-cloth-bowl-salt-half-lemon-wooden-surface-vertical.jpg"
-import imgpart13 from "../components/multimedia/istockphoto-2170136988-1024x1024.jpg"
-import imgpart14 from "../components/multimedia/fresh-papaya-cut-into-half-put-dark-floor.jpg"
-import imgpart15 from "../components/multimedia/close-up-bowl-filled-with-honey-table.jpg"
-import imgpart16 from "../components/multimedia/close-up-elegant-beauty-selfcare-treatment.jpg"
-import imgpart17 from "../components/multimedia/top-view-spa-salt-with-candles-table.jpg"
-import imgpart18 from "../components/multimedia/high-angle-hand-holding-cream-container.jpg"
-import imgpart19 from "../components/multimedia/face-mask-with-cucumber-slices-dark-background.jpg"
-import imgpart20 from "../components/multimedia/moisturizing-cream-rocks-bath-salts.jpg"
-import imgpart21 from "../components/multimedia/istockphoto-1315014822-1024x1024.jpg"
-import imgpart22 from "../components/multimedia/skincare-products.jpg"
-import imgpart23 from "../components/multimedia/hand-cream-tube-mockup (1).jpg"
 
-import imgpart24 from "../components/multimedia/beautiful-young-woman-using-day-cream-home.jpg"
-import imgpart25 from "../components/multimedia/arrangement-natural-argan-oil-dropper.jpg" 
-import imgpart26 from "../components/multimedia/aloe-vera-cosmetic-cream-white-surface.jpg"
-import imgpart27 from "../components/multimedia/hot-rose-tea-table.jpg"
-import imgpart28 from "../components/multimedia/nuts-arrangement-with-copy-space.jpg"
-import imgpart32 from "../components/multimedia/aloe-vera-leaves-with-beauty-cream-bottle.jpg"
-import imgpart29 from '../components/multimedia/some-lemon-juice-with-half-lemon-piece-sack-basket-wooden-surface-high-angle-view-space-text.jpg';
-import imgpart31 from '../components/multimedia/ecofriendly-beauty-product.jpg';
 const Shop = () => {
   // const allProducts = [
   //  { id: 1, name: "Aloe Vera Face Cream", price: 5000,category: "Skincare", image: imgpart3,imgClass: "cream-img" },
