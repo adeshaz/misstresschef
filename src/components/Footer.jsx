@@ -1,6 +1,5 @@
 import React from 'react'
-import imgpart1 from '../components/multimedia/leaf.png';
-import imgpart30 from '../components/multimedia/mistress chef logo.png';
+
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (

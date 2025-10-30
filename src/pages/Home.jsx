@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import imgpart1 from '../components/multimedia/leaf.png';
+
 import Hero from '../components/Hero';
 
 import ProductCard from '../components/ProductCard';
