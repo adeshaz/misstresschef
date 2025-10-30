@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import OrderStatusBar from "./OrderStatusBar"; // ✅ import
-import imgpart100 from "../components/multimedia/box.png"
+
 import "./TrackOrders.css"
 
 const TrackOrder = () => {

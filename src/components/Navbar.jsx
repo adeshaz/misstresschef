@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { ShoppingCart, User } from "lucide-react";
 import { selectCartCount } from "../redux/cartSlice";
 import { logout } from "../redux/authSlice";
-import imgpart30 from '../components/multimedia/mistress chef logo.png';
+
 
 const Navbar = () => {
   const navigate = useNavigate();
