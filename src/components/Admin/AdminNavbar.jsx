@@ -1,7 +1,7 @@
 import React from "react";
 import "./AdminNavbar.css";
 import { useNavigate } from "react-router-dom";
-import imgpart1 from '../multimedia/leaf.png';
+
 
 const AdminNavbar = () => {
   const navigate = useNavigate();
