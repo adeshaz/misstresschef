@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Logo */}
 
         <Link className="navbar-brand text-white fw-bold" to="/">
-          <img src={imgpart30} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
+          <img src={"https://res.cloudinary.com/dlnylsx6r/image/upload/v1761802042/mistress_chef_logo_ueuxm2.png"} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
           MisstressChef
         </Link>
 

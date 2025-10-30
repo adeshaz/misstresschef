@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5900/api",
+  baseURL: "https://mistresscheffbe.onrender.com/api",
 });
 
 // Attach correct token depending on route

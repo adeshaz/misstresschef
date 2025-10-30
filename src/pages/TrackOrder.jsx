@@ -35,7 +35,7 @@ const TrackOrder = () => {
 
       // ✅ Track by paymentRef
       if (paymentRef && !email) {
-        res = await fetch(`http://localhost:5900/api/orders/track/${paymentRef}`);
+        res = await fetch(`https://mistresscheffbe.onrender.com/api/orders/track/${paymentRef}`);
         data = await res.json();
 
         if (data.success) {
@@ -46,7 +46,7 @@ const TrackOrder = () => {
       }
       // ✅ Track by email
       else if (email && !paymentRef) {
-        res = await fetch(`http://localhost:5900/api/orders/user-orders?email=${email}`);
+        res = await fetch(`https://mistresscheffbe.onrender.com/api/orders/user-orders?email=${email}`);
         data = await res.json();
 
         if (data.success) {
@@ -58,7 +58,7 @@ const TrackOrder = () => {
       // ✅ Track by both email & paymentRef
       else if (email && paymentRef) {
         res = await fetch(
-          `http://localhost:5900/api/orders/user-orders?email=${email}&paymentRef=${paymentRef}`
+          `https://mistresscheffbe.onrender.com/api/orders/user-orders?email=${email}&paymentRef=${paymentRef}`
         );
         data = await res.json();
 
@@ -84,7 +84,7 @@ const TrackOrder = () => {
 
   return (
     <div className="container mt-5">
-      <h2><img src={imgpart100} className='box-img' alt="box-icon" />
+      <h2><img src={"https://res.cloudinary.com/dlnylsx6r/image/upload/v1761753639/box_wt7fyj.png"} className='box-img' alt="box-icon" />
          Track Your Order</h2>
       <p>Enter your email or payment reference to check your order status.</p>
 

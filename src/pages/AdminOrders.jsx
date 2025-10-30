@@ -17,7 +17,7 @@ const AdminOrders = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await fetch("http://localhost:5900/api/orders", {
+      const res = await fetch("https://mistresscheffbe.onrender.com/api/orders", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.status === 401 || res.status === 403) {
@@ -34,7 +34,7 @@ const AdminOrders = () => {
 
   const updateStatus = async (id, status) => {
     try {
-      await fetch(`http://localhost:5900/api/orders/${id}/status`, {
+      await fetch(`https://mistresscheffbe.onrender.com/api/orders/${id}/status`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

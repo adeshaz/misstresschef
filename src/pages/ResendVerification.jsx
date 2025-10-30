@@ -16,7 +16,7 @@ const ResendVerification = () => {
 
     try {
       setStatus("loading");
-      const res = await axios.post("http://localhost:5900/api/users/resend-verification", { email });
+      const res = await axios.post("https://mistresscheffbe.onrender.com/api/users/resend-verification", { email });
       setMessage(res.data.message);
       setStatus("success");
     } catch (err) {

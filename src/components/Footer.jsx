@@ -13,9 +13,9 @@ const Footer = () => {
         <div className="row">
           {/* Brand */}
           <div className="col-md-4 mb-3">
-            <h5 className="fw-bold">    <img src={imgpart30} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />  MisstressChef</h5>
+            <h5 className="fw-bold">    <img src={"https://res.cloudinary.com/dlnylsx6r/image/upload/v1761802042/mistress_chef_logo_ueuxm2.png"} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />  MisstressChef</h5>
             <p style={{ fontSize: "14px" }}>
-              Natural skincare for healthy glowing skin <img src={imgpart1} className='leaf-img-top' alt="leaf-icon" />
+              Natural skincare for healthy glowing skin <img src={"https://res.cloudinary.com/dlnylsx6r/image/upload/v1761801883/leaf_aq6y0m.png"} className='leaf-img-top' alt="leaf-icon" />
             </p>
           </div>
 
@@ -67,13 +67,13 @@ const Footer = () => {
   </a>
 </div>
 
-  <a href="https://facebook.com/MisstressChefSkincare" target="_blank" rel="noopener noreferrer" className="text-white me-3">
+  <a href="https://facebook.com/hafizadegbite" target="_blank" rel="noopener noreferrer" className="text-white me-3">
     <i className="fa-brands fa-facebook-f"></i>
   </a>
-  <a href="https://instagram.com/MisstressChefSkincare"  target="_blank" rel="noopener noreferrer" className="text-white me-3">
+  <a href="https://instagram.com/hafizadegbite"  target="_blank" rel="noopener noreferrer" className="text-white me-3">
     <i className="fa-brands fa-instagram"></i>
   </a>
-  <a href="https://twitter.com/MisstressChefSkin" target="_blank" rel="noopener noreferrer" className="text-white">
+  <a href="https://twitter.com/hafizadegbite" target="_blank" rel="noopener noreferrer" className="text-white">
     <i className="fa-brands fa-twitter"></i>
   </a>
 </div>

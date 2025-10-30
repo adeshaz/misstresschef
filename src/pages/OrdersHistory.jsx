@@ -14,7 +14,7 @@ const OrdersHistory = () => {
           return;
         }
 
-        const res = await fetch("http://localhost:5900/api/orders/history", {
+        const res = await fetch("https://mistresscheffbe.onrender.com/api/orders/history", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

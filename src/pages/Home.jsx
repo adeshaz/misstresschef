@@ -2,89 +2,58 @@ import React from 'react'
 import "./Home.css"
 import imgpart1 from '../components/multimedia/leaf.png';
 import Hero from '../components/Hero';
-import imgpart3 from "../components/multimedia/vecteezy_cosmetic-cream-on-a-wooden-table-with-aloe-vera-and-blurred_43372788.jpg";
+
 import ProductCard from '../components/ProductCard';
-import imgpart4 from '../components/multimedia/vecteezy_bottle-with-pump-on-pink-background-for-personal-care-concept_65824415.jpg';
-import imgpart5 from '../components/multimedia/vecteezy_aromatic-spray-bottle-with-mint-leaves-and-flowers-flat-lay_69632698.jpg'; 
-import imgpart6 from '../components/multimedia/vecteezy_coconut-oil-jar-with-fresh-coconut-and-tropical-flowers_69738785.jpeg';
-import imgpart7 from '../components/multimedia/vecteezy_bottle-of-green-liquid-surrounded-by-daisies_46406146.jpeg'
-import imgpart8 from '../components/multimedia/vecteezy_decorative-jar-with-lid-containing-creamy-cosmetic-product_65288181.jpeg'
 
-
-import imgpart40 from "../components/multimedia/turmeric-powder.jpg"
-import imgpart9 from "../components/multimedia/3d-rendering-personal-care-products-fondant-pink.jpg"
-import imgpart10 from "../components/multimedia/adult-woman-applying-skin-care-treatment.jpg"
-import imgpart11 from "../components/multimedia/eco-avocado-cream-spa-treatment-concept.jpg"
-import imgpart12 from "../components/multimedia/top-view-lemons-basket-with-white-cloth-bowl-salt-half-lemon-wooden-surface-vertical.jpg"
-import imgpart13 from "../components/multimedia/istockphoto-2170136988-1024x1024.jpg"
-import imgpart14 from "../components/multimedia/fresh-papaya-cut-into-half-put-dark-floor.jpg"
-import imgpart15 from "../components/multimedia/close-up-bowl-filled-with-honey-table.jpg"
-import imgpart16 from "../components/multimedia/close-up-elegant-beauty-selfcare-treatment.jpg"
-import imgpart17 from "../components/multimedia/top-view-spa-salt-with-candles-table.jpg"
-import imgpart18 from "../components/multimedia/high-angle-hand-holding-cream-container.jpg"
-import imgpart19 from "../components/multimedia/face-mask-with-cucumber-slices-dark-background.jpg"
-import imgpart20 from "../components/multimedia/moisturizing-cream-rocks-bath-salts.jpg"
-import imgpart21 from "../components/multimedia/istockphoto-1315014822-1024x1024.jpg"
-import imgpart22 from "../components/multimedia/skincare-products.jpg"
-import imgpart23 from "../components/multimedia/hand-cream-tube-mockup (1).jpg"
-
-import imgpart24 from "../components/multimedia/beautiful-young-woman-using-day-cream-home.jpg"
-import imgpart25 from "../components/multimedia/arrangement-natural-argan-oil-dropper.jpg" 
-import imgpart26 from "../components/multimedia/aloe-vera-cosmetic-cream-white-surface.jpg"
-import imgpart27 from "../components/multimedia/hot-rose-tea-table.jpg"
-import imgpart28 from "../components/multimedia/nuts-arrangement-with-copy-space.jpg"
-import imgpart32 from "../components/multimedia/aloe-vera-leaves-with-beauty-cream-bottle.jpg"
-import imgpart29 from '../components/multimedia/some-lemon-juice-with-half-lemon-piece-sack-basket-wooden-surface-high-angle-view-space-text.jpg';
-import imgpart31 from '../components/multimedia/ecofriendly-beauty-product.jpg';
 
 const Home = () => {
-  const featuredProducts =[
-   
-   { id: 1, name: "Aloe Vera Face Cream", price: 5000, image: imgpart3, imgClass: "cream-img" },
-  { id: 2, name: "Shea Butter Lotion", price: 4500, image: imgpart4, imgClass: "lotion-img" },
-  { id: 3, name: "Green Tea Toner", price: 3500, image: imgpart5, imgClass: "toner-img" },
-  { id: 4, name: "Coconut Oil Moisturizer", price: 5500, image: imgpart6, imgClass: "coconut-img" },
-  { id: 5, name: "Herbal Shampoo", price: 6000, image: imgpart7, imgClass: "herbal-img" },
-  { id: 6, name: "Baby Moisturizer", price: 4000, image: imgpart8, imgClass: "baby-img" },
-  { id: 7, name: "Turmeric Glow Cream", price: 5200, image: imgpart40, imgClass: "turmeric-img" },
-  { id: 8, name: "Rose Water Toner", price: 3000, image: imgpart9, imgClass: "rosewater-img" },
-  { id: 9, name: "Charcoal Detox Mask", price: 6500, image: imgpart10, imgClass: "charcoal-img" },
-  { id: 10, name: "Avocado Hair Cream", price: 4800, image: imgpart11, imgClass: "avocado-img" },
-  { id: 11, name: "Lemon Face Scrub", price: 3700, image: imgpart12, imgClass: "lemon-img" },
-  { id: 12, name: "Vitamin C Serum", price: 7200, image: imgpart13, imgClass: "vitamin-img" },
-  { id: 13, name: "Papaya Whitening Soap", price: 2800, image: imgpart14, imgClass: "papaya-img" },
-  { id: 14, name: "Honey Lip Balm", price: 1500, image: imgpart15, imgClass: "honey-img" },
-  { id: 15, name: "Lavender Body Oil", price: 5300, image: imgpart16, imgClass: "lavender-img" },
-  { id: 16, name: "Neem Face Wash", price: 4100, image: imgpart17, imgClass: "neem-img" },
-  { id: 17, name: "Aloe Hair Gel", price: 3400, image: imgpart18, imgClass: "aloehair-img" },
-  { id: 18, name: "Cucumber Eye Cream", price: 6000, image: imgpart19, imgClass: "cucumber-img" },
-  { id: 19, name: "Herbal Whitening Lotion", price: 6500, image: imgpart20, imgClass: "herbalwhite-img" },
-  { id: 20, name: "Tea Tree Acne Cream", price: 5700, image: imgpart21, imgClass: "teatree-img" },
-  { id: 21, name: "Carrot Brightening Lotion", price: 5000, image: imgpart22, imgClass: "carrot-img" },
-  { id: 22, name: "Mint Cooling Gel", price: 3800, image: imgpart23, imgClass: "mint-img" },
-  { id: 23, name: "Herbal Foot Cream", price: 4200, image: imgpart24, imgClass: "footcream-img" },
-  { id: 24, name: "Argan Hair Serum", price: 7200, image: imgpart25, imgClass: "argan-img" },
-  { id: 25, name: "Neem & Aloe Soap", price: 2500, image: imgpart26, imgClass: "neemaloe-img" },
-  { id: 26, name: "Rose Clay Mask", price: 5900, image: imgpart27, imgClass: "roseclay-img" },
-  { id: 27, name: "Cocoa Butter Cream", price: 5000, image: imgpart28, imgClass: "cocoa-img" },
-  { id: 28, name: "Aloe Hand Sanitizer", price: 2500, image: imgpart32, imgClass: "aloehand-img" },
-  { id: 29, name: "Lemon Glow Oil", price: 4800, image: imgpart29, imgClass: "lemonglow-img" },
-  { id: 30, name: "Herbal Hair Growth Oil", price: 7000, image: imgpart31, imgClass: "hairgrowth-img" },
-];
+  const featuredProducts = [
+
+    { id: 1, name: "Aloe Vera Face Cream", price: 5000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761812129/vecteezy_cosmetic-cream-on-a-wooden-table-with-aloe-vera-and-blurred_43372788_doioi3.jpg", imgClass: "cream-img" },
+    { id: 2, name: "Shea Butter Lotion", price: 4500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761812458/vecteezy_bottle-with-pump-on-pink-background-for-personal-care-concept_65824415_hsxqxc.jpg", imgClass: "lotion-img" },
+    { id: 3, name: "Green Tea Toner", price: 3500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761803807/vecteezy_aromatic-spray-bottle-with-mint-leaves-and-flowers-flat-lay_69632698_pvmiig.jpg", imgClass: "toner-img" },
+    { id: 4, name: "Coconut Oil Moisturizer", price: 5500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761812444/vecteezy_coconut-oil-jar-with-fresh-coconut-and-tropical-flowers_69738785_gvtzuj.jpg", imgClass: "coconut-img" },
+    { id: 5, name: "Herbal Shampoo", price: 6000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761812789/istockphoto-1320934166-1024x1024_qz1k2e.jpg", imgClass: "herbal-img" },
+    { id: 6, name: "Baby Moisturizer", price: 4000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761804429/vecteezy_decorative-jar-with-lid-containing-creamy-cosmetic-product_65288181_fdtxey.jpg", imgClass: "baby-img" },
+    { id: 7, name: "Turmeric Glow Cream", price: 5200, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761803237/turmeric-powder_ya3a8j.jpg", imgClass: "turmeric-img" },
+    { id: 8, name: "Rose Water Toner", price: 3000, image: 'https://res.cloudinary.com/dlnylsx6r/image/upload/v1761751394/3d-rendering-personal-care-products-fondant-pink_gthjz4.jpg', imgClass: "rosewater-img" },
+    { id: 9, name: "Charcoal Detox Mask", price: 6500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761751847/adult-woman-applying-skin-care-treatment_oebplp.jpg", imgClass: "charcoal-img" },
+    { id: 10, name: "Avocado Hair Cream", price: 4800, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761812924/istockphoto-960327142-1024x1024_tmuj5m.jpg", imgClass: "avocado-img" },
+    { id: 11, name: "Lemon Face Scrub", price: 3700, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761776424/eco-avocado-cream-spa-treatment-concept_zmutdw.jpg", imgClass: "lemon-img" },
+    { id: 12, name: "Vitamin C Serum", price: 7200, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761801792/istockphoto-2170136988-1024x1024_ltxfcu.jpg", imgClass: "vitamin-img" },
+    { id: 13, name: "Papaya Whitening Soap", price: 2800, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761813097/istockphoto-1317246845-1024x1024_vhn2pp.jpg", imgClass: "papaya-img" },
+    { id: 14, name: "Honey Lip Balm", price: 1500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761813252/istockphoto-1363904728-1024x1024_qslmcc.jpg", imgClass: "honey-img" },
+    { id: 15, name: "Lavender Body Oil", price: 5300, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761754756/close-up-elegant-beauty-selfcare-treatment_f9dwkx.jpg", imgClass: "lavender-img" },
+    { id: 16, name: "Neem Face Wash", price: 4100, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761813412/istockphoto-915318694-1024x1024_j2jc2r.jpg", imgClass: "neem-img" },
+    { id: 17, name: "Aloe Hair Gel", price: 3400, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761777645/high-angle-hand-holding-cream-container_ypw97v.jpg", imgClass: "aloehair-img" },
+    { id: 18, name: "Cucumber Eye Cream", price: 6000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761777027/face-mask-with-cucumber-slices-dark-background_dazc6f.jpg", imgClass: "cucumber-img" },
+    { id: 19, name: "Herbal Whitening Lotion", price: 6500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761802140/moisturizing-cream-rocks-bath-salts_veqsup.jpg", imgClass: "herbalwhite-img" },
+    { id: 20, name: "Tea Tree Acne Cream", price: 5700, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761801669/istockphoto-1315014822-1024x1024_z2kudh.jpg", imgClass: "teatree-img" },
+    { id: 21, name: "Carrot Brightening Lotion", price: 5000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761802445/skincare-products_klrp9o.jpg", imgClass: "carrot-img" },
+    { id: 22, name: "Mint Cooling Gel", price: 3800, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761777437/hand-cream-tube-mockup_1_rjdtya.jpg", imgClass: "mint-img" },
+    { id: 23, name: "Herbal Foot Cream", price: 4200, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761753414/beautiful-young-woman-using-day-cream-home_vabssk.jpg", imgClass: "footcream-img" },
+    { id: 24, name: "Argan Hair Serum", price: 7200, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761753246/arrangement-natural-argan-oil-dropper_u9newh.jpg", imgClass: "argan-img" },
+    { id: 25, name: "Neem & Aloe Soap", price: 2500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761752584/aloe-vera-cosmetic-cream-white-surface_cghnro.jpg", imgClass: "neemaloe-img" },
+    { id: 26, name: "Rose Clay Mask", price: 5900, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761801240/hot-rose-tea-table_cdxmbr.jpg", imgClass: "roseclay-img" },
+    { id: 27, name: "Cocoa Butter Cream", price: 5000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761802386/nuts-arrangement-with-copy-space_dgmzeh.jpg", imgClass: "cocoa-img" },
+    { id: 28, name: "Aloe Hand Sanitizer", price: 2500, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761753035/aloe-vera-leaves-with-beauty-cream-bottle_pewhir.jpg", imgClass: "aloehand-img" },
+    { id: 29, name: "Lemon Glow Oil", price: 4800, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761813586/istockphoto-1264245297-1024x1024_jtuolr.jpg", imgClass: "lemonglow-img" },
+    { id: 30, name: "Herbal Hair Growth Oil", price: 7000, image: "https://res.cloudinary.com/dlnylsx6r/image/upload/v1761813721/istockphoto-2236129538-1024x1024_qkrfe7.jpg", imgClass: "hairgrowth-img" },
+  ];
   return (
-    
+
     <div className="text-center">
       <Hero />
       <h1 className="text-success fw-bold">Welcome to MisstressChef Skincare</h1>
-      <p className="lead">Your beauty, our priority <img src={imgpart1} className='leaf-img-top' alt="leaf-icon" />
-       </p>
-       <section className="container py-5">
-         <h2 className="text-center mb-4 fw-bold">Featured Products</h2>
-         <div className="row">
-           {featuredProducts.map((product) => (
+      <p className="lead">Your beauty, our priority <img src={"https://res.cloudinary.com/dlnylsx6r/image/upload/v1761801883/leaf_aq6y0m.png"} className='leaf-img-top' alt="leaf-icon" />
+      </p>
+      <section className="container py-5">
+        <h2 className="text-center mb-4 fw-bold">Featured Products</h2>
+        <div className="row">
+          {featuredProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
-         ))}
-       </div>
+          ))}
+        </div>
       </section>
     </div>
   )

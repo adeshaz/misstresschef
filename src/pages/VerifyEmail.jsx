@@ -13,7 +13,7 @@ const VerifyEmail = () => {
       try {
         // ✅ Call your backend verification route
         const response = await axios.get(
-          `http://localhost:5900/api/users/verify/${token}`
+          `https://mistresscheffbe.onrender.com/api/users/verify/${token}`
         );
 
         if (response.data.success) {
@@ -62,7 +62,7 @@ const VerifyEmail = () => {
         try {
           const email = prompt("Enter your email to resend verification link:");
           if (!email) return;
-          const res = await axios.post("http://localhost:5900/api/users/resend-verification", { email });
+          const res = await axios.post("https://mistresscheffbe.onrender.com/api/users/resend-verification", { email });
           alert(res.data.message);
         } catch (err) {
           alert(err.response?.data?.message || "Error resending email.");
